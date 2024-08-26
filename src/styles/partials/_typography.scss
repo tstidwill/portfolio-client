@@ -1,0 +1,10 @@
+@use "./variables" as *;
+
+@font-face {
+  font-family: $font-family;
+  src: url("fonts/SpaceGrotesk-VariableFont_wght.woff2") format("woff2"),
+    url("/fonts/SpaceGrotesk-Light.woff") format("woff");
+  font-weight: 300 700;
+  font-style: normal;
+  font-display: swap;
+}
