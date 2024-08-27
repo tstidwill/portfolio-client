@@ -7,9 +7,9 @@ export default function Header() {
         <h3 className="header__logo">TARA STIDWILL</h3>
       </div>
       <ul className="header__directory">
-        <li>Projects</li>
-        <li>Resume</li>
-        <li>Connect</li>
+        <li className="header__listitem">Projects</li>
+        <li className="header__listitem">Resume</li>
+        <li className="header__listitem">Connect</li>
       </ul>
     </section>
   );
