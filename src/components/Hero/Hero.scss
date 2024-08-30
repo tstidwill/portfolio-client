@@ -1,3 +1,5 @@
+@use "../../styles/partials/mixins" as *;
+
 .hero {
   display: flex;
   flex-direction: column;
@@ -6,15 +8,27 @@
 
   &__image {
     width: 100%;
-    height: 26rem;
+    height: 10rem;
     object-fit: cover;
     object-position: 50% 100%;
-    margin: 20px 0;
+
+    @include tablet {
+      margin: 20px 0;
+      height: 26rem;
+    }
   }
 
   &__text {
+    display: flex;
+    flex-direction: column;
     margin: 20px 0;
     display: flex;
+    text-align: center;
+
+    @include tablet {
+      flex-direction: row;
+      text-align: left;
+    }
   }
 
   &__headline {
@@ -26,5 +40,9 @@
   }
   &__paragraph {
     margin: 16px 0;
+
+    @include tablet {
+      margin-top: 0;
+    }
   }
 }

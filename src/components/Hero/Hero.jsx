@@ -5,10 +5,7 @@ export default function Header() {
     <section className="hero">
       <img src="/images/IMG_0272.jpeg" className="hero__image" />
       <div className="hero__text">
-        <h2 className="hero__headline">
-          FULL-STACK
-          <br /> DEVELOPER
-        </h2>
+        <h2 className="hero__headline">FULL-STACK DEVELOPER</h2>
         <div className="hero__bio">
           <p className="hero__paragraph">
             Hi there! I’m a Canadian Software Engineer with a passion for
