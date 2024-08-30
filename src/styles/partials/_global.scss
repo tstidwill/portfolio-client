@@ -90,3 +90,13 @@ p {
     line-height: 20px;
   }
 }
+
+button {
+  background-color: $dark;
+  color: $light;
+  font-weight: 300;
+  border-radius: 32px;
+  text-decoration: none;
+  border: none;
+  padding: 0.6rem 2rem;
+}
