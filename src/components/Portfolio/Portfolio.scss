@@ -1,0 +1,38 @@
+@use "../../styles/partials/variables" as *;
+
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  background-color: #e7ddf3;
+
+  &__content {
+    margin: 40px 10%;
+  }
+
+  &__welcome {
+    text-align: center;
+    padding: 20px 0;
+  }
+}
+
+.welcome {
+  &__header {
+    margin: 20px 0;
+  }
+}
+
+.projects {
+  margin: 40px 10%;
+  display: flex;
+  justify-content: center;
+
+  &__card {
+    width: 40rem;
+  }
+  &__image {
+    width: 100%;
+  }
+  &__title {
+    margin: 16px 0;
+  }
+}
