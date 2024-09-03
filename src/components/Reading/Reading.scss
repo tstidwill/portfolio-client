@@ -1,0 +1,32 @@
+@use "../../styles/partials/variables" as *;
+
+.reading {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 10%;
+  justify-content: center;
+  width: 25%;
+
+  &__header {
+    padding: 12px;
+    margin: 20px 0;
+    border-bottom: 1px solid $dark;
+  }
+
+  &__books {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+  }
+}
+
+.card {
+  width: 20rem;
+
+  &__author {
+    font-style: italic;
+  }
+  &__image {
+    width: 100%;
+  }
+}
