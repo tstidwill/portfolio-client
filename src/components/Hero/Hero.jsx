@@ -5,17 +5,23 @@ export default function Header() {
     <section className="hero">
       <img src="/images/IMG_0272.jpeg" className="hero__image" />
       <div className="hero__text">
-        <h2 className="hero__headline">FULL-STACK DEVELOPER</h2>
+        <div className="hero__title">
+          <h2 className="hero__subheader">climate focused</h2>
+          <h1 className="hero__headline">
+            <span className="auto-type"></span>
+          </h1>
+        </div>
         <div className="hero__bio">
           <p className="hero__paragraph">
-            Hi there! I’m a Canadian Software Engineer with a passion for
-            sustainability and a talent for problem-solving. I earned my B.Sc.
-            in Mathematics from McGill University and recently graduated from
-            BrainStation's Software Engineering Bootcamp. I’m committed to
-            applying my skills to develop innovative, sustainable solutions that
-            make a positive impact on the world. When I’m not coding, you can
-            find me practicing yoga, dabbling in pottery, or connecting with
-            nature. I look forward to connecting!
+            Hi there! <br />
+            I’m a Canadian Software Engineer with a passion for sustainability
+            and a talent for problem-solving. I earned my B.Sc. in Mathematics
+            from McGill University and recently graduated from BrainStation's
+            Software Engineering Bootcamp. I’m committed to applying my skills
+            to develop innovative, sustainable solutions that make a positive
+            impact on the world. When I’m not coding, you can find me practicing
+            yoga, dabbling in pottery, or connecting with nature. I look forward
+            to connecting!
           </p>
           <button> View Projects </button>
         </div>
