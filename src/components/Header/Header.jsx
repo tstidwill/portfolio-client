@@ -8,7 +8,16 @@ export default function Header() {
       </div>
       <ul className="header__directory">
         <li className="header__listitem">Projects</li>
-        <li className="header__listitem">Resume</li>
+        <li className="header__listitem">
+          <a
+            href="/Tara_Stidwill_Resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="header__link"
+          >
+            Resume
+          </a>
+        </li>
         <li className="header__listitem">Connect</li>
       </ul>
     </section>
