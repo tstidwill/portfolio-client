@@ -7,7 +7,12 @@ export default function Header() {
         <h3 className="header__logo">TARA STIDWILL</h3>
       </div>
       <ul className="header__directory">
-        <li className="header__listitem">Projects</li>
+        <li className="header__listitem">
+          {" "}
+          <a href="#portfolio" className="header__link">
+            Portfolio
+          </a>
+        </li>
         <li className="header__listitem">
           <a
             href="/Tara_Stidwill_Resume.pdf"
