@@ -1,1 +1,12 @@
 @use "./styles/partials/global" as *;
+
+.main {
+  display: flex;
+  flex-direction: column;
+
+  &__landing {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+}

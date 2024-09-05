@@ -6,12 +6,14 @@ import Reading from "./components/Reading/Reading";
 
 function App() {
   return (
-    <>
-      <Header />
-      <Hero />
+    <main className="main">
+      <div className="main__landing">
+        <Header />
+        <Hero />
+      </div>
       <Portfolio />
       <Reading />
-    </>
+    </main>
   );
 }
 
