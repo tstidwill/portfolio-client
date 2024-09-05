@@ -3,7 +3,7 @@
 .portfolio {
   display: flex;
   flex-direction: column;
-  background-color: #e7ddf3;
+  background-color: $light;
 
   &__content {
     margin: 40px 10%;
@@ -11,7 +11,7 @@
 
   &__welcome {
     text-align: center;
-    padding: 20px 0;
+    padding: 15px 10%;
   }
 }
 

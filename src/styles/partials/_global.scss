@@ -29,7 +29,7 @@ h1 {
 
 h2 {
   font-weight: 400;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 24px;
 
   @include tablet {
@@ -41,18 +41,18 @@ h2 {
 h3 {
   font-weight: 600;
   font-size: 18px;
-  line-height: 26px;
+  line-height: 22px;
 
   @include tablet {
     font-size: 24px;
-    line-height: 32px;
+    line-height: 28px;
   }
 }
 
 h4 {
   font-weight: 400;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 20px;
 
   @include tablet {
     font-size: 22px;
@@ -62,8 +62,8 @@ h4 {
 
 h5 {
   font-weight: 400;
-  font-size: 20px;
-  line-height: 28px;
+  font-size: 16px;
+  line-height: 24px;
 
   @include tablet {
     font-size: 20px;
