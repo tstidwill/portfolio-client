@@ -1,0 +1,12 @@
+@use "../../styles/partials/mixins" as *;
+
+.typed-header {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 38px;
+
+  @include tablet {
+    font-size: 60px;
+    line-height: 68px;
+  }
+}
