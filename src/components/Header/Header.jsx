@@ -23,7 +23,6 @@ export default function Header() {
             Resume
           </a>
         </li>
-        <li className="header__listitem">Connect</li>
       </ul>
     </section>
   );
