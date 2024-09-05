@@ -1,4 +1,5 @@
 import "./Hero.scss";
+import TypedText from "../TypedText/TypedText";
 
 export default function Header() {
   return (
@@ -7,9 +8,10 @@ export default function Header() {
       <div className="hero__text">
         <div className="hero__title">
           <h2 className="hero__subheader">climate focused</h2>
-          <h1 className="hero__headline">
-            <span className="auto-type"></span>
-          </h1>
+          <TypedText
+            strings={["FULL-STACK DEVELOPER"]}
+            className="typed-header"
+          />
         </div>
         <div className="hero__bio">
           <p className="hero__paragraph">
