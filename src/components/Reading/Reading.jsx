@@ -28,7 +28,6 @@ export default function Reading() {
     if (prevBtn) prevBtn.addEventListener("click", handlePrevClick);
     if (nextBtn) nextBtn.addEventListener("click", handleNextClick);
 
-    // Clean up event listeners on unmount
     return () => {
       if (prevBtn) prevBtn.removeEventListener("click", handlePrevClick);
       if (nextBtn) nextBtn.removeEventListener("click", handleNextClick);
@@ -65,7 +64,9 @@ export default function Reading() {
             <h5 className="card__title">A Future We Can Love</h5>
             <h5 className="card__author">Susan Bauer-Wu</h5>
           </div>
-          <img src="/images/future_we_can_love.jpg" className="card__image" />
+          <div className="card__imagecontainer">
+            <img src="/images/future_we_can_love.jpg" className="card__image" />
+          </div>
         </section>
         <section
           className="reading__card card"
@@ -78,7 +79,9 @@ export default function Reading() {
             </h5>
             <h5 className="card__author">Jason Hickel</h5>
           </div>
-          <img src="/images/Less_is_more.jpeg" className="card__image" />
+          <div className="card__imagecontainer">
+            <img src="/images/Less_is_more.jpeg" className="card__image" />
+          </div>
         </section>
         <section
           className="reading__card card"
@@ -89,7 +92,9 @@ export default function Reading() {
             <h5 className="card__title">Losing Earth: A Recent History</h5>
             <h5 className="card__author">Nathaniel Rich</h5>
           </div>
-          <img src="/images/Losing_Earth.jpg" className="card__image" />
+          <div className="card__imagecontainer">
+            <img src="/images/Losing_Earth.jpg" className="card__image" />
+          </div>
         </section>
       </div>
       <button

@@ -7,8 +7,11 @@
   margin: 0 auto;
   overflow: hidden;
 
-  @include tablet {
-    height: 100vh;
+  @include desktop {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
     width: 100%;
     padding: 15px 15%;
   }
@@ -20,12 +23,11 @@
 
   &__books {
     display: flex;
+    padding-top: 16px;
     transition: tranform 0.5s ease-in-out;
 
-    @include tablet {
+    @include desktop {
       flex-direction: row;
-      flex-wrap: nowrap;
-      overflow-x: auto;
     }
   }
 
@@ -46,7 +48,7 @@
       right: 10px;
     }
 
-    @include tablet {
+    @include desktop {
       display: none;
     }
   }
@@ -56,15 +58,16 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 100%;
+  min-width: 100%;
   box-sizing: border-box;
   text-align: center;
   padding: 20px;
 
-  @include tablet {
+  @include desktop {
     flex: 1 1 auto;
-    min-width: 250px;
+    min-width: 30%;
     margin-right: 15px;
+    justify-content: center;
 
     &:nth-last-child(1) {
       margin-right: 0;
@@ -75,7 +78,7 @@
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    margin-bottom: 10px;
+    margin-bottom: 16px;
   }
 
   &__title {
@@ -86,15 +89,26 @@
   &__author {
     font-style: italic;
   }
+
+  &__imagecontainer {
+    @include desktop {
+      align-self: center;
+      display: flex;
+      width: 100%;
+      object-fit: fill;
+      overflow: hidden;
+      max-height: 400px;
+    }
+  }
   &__image {
     width: 100%;
     height: auto;
     object-fit: contain;
     max-height: 250px;
 
-    @include tablet {
+    @include desktop {
       object-fit: contain;
-      min-height: 400px;
+      max-height: none;
     }
   }
 }
