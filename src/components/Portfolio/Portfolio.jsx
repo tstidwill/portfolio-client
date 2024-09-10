@@ -15,18 +15,7 @@ export default function Portfolio() {
         <section className="projects__card">
           <NewLeaf />
           <h4 className="projects__title">New Leaf</h4>
-          <p>
-            {" "}
-            A web app that allows users to enter an area code and find nearby
-            community gardens, thrift stores, and zero waste groceries. It
-            features category-based filtering and uses Google Maps for location
-            services, all built with React, Express, and MySQL.
-          </p>
-        </section>
-        <section className="projects__card">
-          <NewLeaf />
-          <h4 className="projects__title">New Leaf</h4>
-          <p>
+          <p className="projects__description">
             {" "}
             A web app that allows users to enter an area code and find nearby
             community gardens, thrift stores, and zero waste groceries. It
