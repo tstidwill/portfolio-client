@@ -1,19 +1,28 @@
 @use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
 
 .footer {
   background-image: url(/public/images/Footer.png);
   background-size: 100% auto;
   background-repeat: no-repeat;
-  height: 20rem;
+  height: 12rem;
   display: flex;
-  flex-direction: column;
-  justify-content: end;
-  align-items: center;
+  justify-content: space-between;
+  align-items: end;
+  padding: 1rem 10%;
   width: 100%;
-  padding: 2rem 10% 0;
+
+  @include tablet {
+    height: 18rem;
+  }
+
+  @include desktop {
+    height: 25rem;
+  }
 
   &__contact {
     display: flex;
+
     gap: 1rem;
   }
 
@@ -21,5 +30,16 @@
     font-size: 22px;
     text-decoration: none;
     color: $dark;
+  }
+
+  &__icon {
+    width: 24px;
+    height: 24px;
+    fill: $dark;
+
+    @include tablet {
+      width: 48px;
+      height: 48px;
+    }
   }
 }
