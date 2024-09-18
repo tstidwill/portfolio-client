@@ -1,0 +1,25 @@
+@use "../../styles/partials/variables" as *;
+
+.footer {
+  background-image: url(/public/images/Footer.png);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  width: 100%;
+  padding: 2rem 10% 0;
+
+  &__contact {
+    display: flex;
+    gap: 1rem;
+  }
+
+  &__link {
+    font-size: 22px;
+    text-decoration: none;
+    color: $dark;
+  }
+}
